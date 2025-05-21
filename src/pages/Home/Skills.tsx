@@ -10,6 +10,7 @@ import MySQLIcon from '../../assets/icons/mysql.png';
 import GitIcon from '../../assets/icons/git.png';
 import DockerIcon from '../../assets/icons/docker.png';
 import VSCodeIcon from '../../assets/icons/vscode.png';
+import SkillItem from '../../components/SkillItem';
 
 
 function Skills() {
@@ -35,18 +36,7 @@ function Skills() {
                     <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-4">
                         {skill_list.map((item, index) => {
                             console.log(item)
-                            return (
-                                <div key={index} className="flex flex-row items-center border-0 border-gray-300 rounded-lg shadow-md p-1 gap-x-2 bg-stone-900 hover:bg-stone-600 hover:animate-bounce">
-                                    <div className="rounded-lg bg-radial from-stone-600 via-stone-800 to-stone-600 p-2">
-                                        <img
-                                            src={item.icon}
-                                            alt={item.icon}
-                                            className="w-4 h-4 m-2"
-                                        />
-                                    </div>
-                                    <p className="text-center">{item.name}</p>
-                                </div>
-                            )
+                            return <SkillItem index={index} icon={item.icon} name={item.name}/>
                         })}
                     </div>
                 </div>
