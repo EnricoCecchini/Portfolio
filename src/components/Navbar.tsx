@@ -5,6 +5,7 @@ function Navbar() {
         {name: "About", link: "#about"},
         {name: "Skills", link: "#skills"},
         {name: "Experience", link: "#experience"},
+        {name: "Education", link: "#education"},
         {name: "Projects", link: "#projects"},
         {name: "Contact", link: "#contact"},
     ]
@@ -12,7 +13,7 @@ function Navbar() {
     return (
         <>
             <div className='navbar w-full border-1 p-4'>
-                <div className='flex flex-row w-full justify-center flex-nowrap gap-x-4'>
+                <div className='flex flex-row w-full justify-center flex-wrap gap-x-4'>
                     {
                         sections.map((item) => {
                             return (

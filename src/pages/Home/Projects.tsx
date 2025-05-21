@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectItem from '../../components/ProjectItem'
+import PageTitle from '../../components/PageTitle'
 
 function Projects() {
     const projects = [
@@ -43,9 +44,9 @@ function Projects() {
 
     return (
         <>
-            <div id="projects"  className="flex flex-row w-full">
+            <div id="projects"  className="w-full">
                 <div className='flex flex-col'>
-                    <h1>Projects</h1>
+                    <PageTitle title='Projects' />
 
                     <div className='grid lg:grid-cols-5 md:grid-cols-2 gap-4'>
                         {projects.map((item, index) => {

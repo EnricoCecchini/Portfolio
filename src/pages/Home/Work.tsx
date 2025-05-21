@@ -1,5 +1,6 @@
 import React from 'react'
 import WorkItem from '../../components/WorkItem'
+import PageTitle from '../../components/PageTitle'
 
 function Work() {
     const experience = [
@@ -96,11 +97,9 @@ function Work() {
 
     return (
         <>
-            <div className="flex flex-col w-full gap-4 px-8">
-                <div className=''>
-                    <h1 id="experience">Work Experience</h1>
-                </div>
-                <div className='flex flex-col items-center gap-y-4'>
+            <div className="flex flex-col">
+                <div className='flex flex-col gap-y-4'>
+                    <PageTitle title='Work Experience' />
                     {
                         experience.map((item) => {
                             return <WorkItem

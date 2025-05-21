@@ -11,6 +11,7 @@ import GitIcon from '../../assets/icons/git.png';
 import DockerIcon from '../../assets/icons/docker.png';
 import VSCodeIcon from '../../assets/icons/vscode.png';
 import SkillItem from '../../components/SkillItem';
+import PageTitle from '../../components/PageTitle';
 
 
 function Skills() {
@@ -30,9 +31,9 @@ function Skills() {
 
     return (
         <>
-            <div id="skills" className='w-full flex flex-col items-center justify-center p-4'>
-                <div className='flex flex-col'>
-                    <h1 className="w-full text-2xl font-bold text-left">Skills</h1>
+            <div id="skills" className='w-full flex flex-col justify-center'>
+                <div className='flex flex-col gap-y-4'>
+                    <PageTitle title='Skills' />
                     <div className="grid md:grid-cols-5 grid-cols-2 gap-x-4 gap-y-4 grid-flow-row">
                         {skill_list.map((item, index) => {
                             console.log(item)

@@ -4,16 +4,21 @@ import About from './About'
 import Projects from './Projects'
 import Work from './Work'
 import Navbar from '../../components/Navbar'
+import Education from './Education'
 
 function Home() {
   return (
     <>
-        <Navbar />
-        <div className='flex flex-col gap-y-2'>
-            <About />
-            <Skills />
-            <Work />
-            <Projects />
+        <div className='flex flex-col gap-y-2 w-full items-center'>
+            <Navbar />
+
+            <div className='lg:w-[65%] px-4 items-center flex flex-col gap-y-8'>
+                <About />
+                <Skills />
+                <Work />
+                <Education />
+                <Projects />
+            </div>
         </div>
     </>
   )

@@ -15,7 +15,7 @@ interface WorkItemInterface{
 function WorkItem(props: WorkItemInterface) {
     return (
         <>
-            <div className='w-full border-1 rounded-lg p-4'>
+            <div className='w-full border-l-1 rounded-lg p-4'>
                 <div className='flex flex-col mb-2'>
                     <h2 className='text-2xl font-bold'>{props.title} ({props.company})</h2>
                     <h3 className='text-l'>{props.date_start} - {props.date_end}</h3>
