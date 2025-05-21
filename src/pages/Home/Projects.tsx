@@ -43,7 +43,7 @@ function Projects() {
 
     return (
         <>
-            <div className="flex flex-row w-full">
+            <div id="projects"  className="flex flex-row w-full">
                 <div className='flex flex-col'>
                     <h1>Projects</h1>
 

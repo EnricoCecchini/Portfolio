@@ -30,10 +30,10 @@ function Skills() {
 
     return (
         <>
-            <div className='w-full flex flex-col items-center justify-center border-1'>
+            <div id="skills" className='w-full flex flex-col items-center justify-center p-4'>
                 <div className='flex flex-col'>
-                    <h1 className="w-full text-2xl font-bold text-left my-4">Skills</h1>
-                    <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-4">
+                    <h1 className="w-full text-2xl font-bold text-left">Skills</h1>
+                    <div className="grid md:grid-cols-5 grid-cols-2 gap-x-4 gap-y-4 grid-flow-row">
                         {skill_list.map((item, index) => {
                             console.log(item)
                             return <SkillItem index={index} icon={item.icon} name={item.name}/>
