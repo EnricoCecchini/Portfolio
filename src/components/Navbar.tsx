@@ -13,7 +13,7 @@ function Navbar() {
 
     return (
         <>
-            <div className='navbar w-full border-1 p-4'>
+            <div className='navbar w-full p-4 mb-8 bg-gradient-to-r from-stone-900 via-stone-700 to-stone-900'>
                 <div className='flex flex-row w-full justify-center flex-wrap gap-x-4'>
                     {
                         sections.map((item) => {

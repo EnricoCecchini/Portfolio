@@ -10,17 +10,19 @@ import Contact from './Contact'
 function Home() {
   return (
     <>
-        <div className='flex flex-col gap-y-2 w-full items-center'>
+        <div className='flex flex-col gap-y-2 w-full items-center bg-stone-900 text-white'>
             <Navbar />
 
-            <div className='flex lg:flex-row align-top flex-wrap'>
+            <div className='w-full flex lg:flex-row align-top flex-wrap'>
                 <Contact />
-                <div className='lg:w-[65%] px-4 items-center flex flex-col gap-y-8'>
-                    <About />
-                    <Skills />
-                    <Work />
-                    <Education />
-                    <Projects />
+                <div className='lg:w-[75%] px-4 items-center'>
+                    <div className='w-full flex flex-col gap-y-8'>
+                        <About />
+                        <Skills />
+                        <Work />
+                        <Education />
+                        <Projects />
+                    </div>
                 </div>
             </div>
         </div>

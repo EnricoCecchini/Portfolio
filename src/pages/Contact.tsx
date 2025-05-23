@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { Logos } from '../components/Logos';
 import PageTitle from '../components/PageTitle';
+import ProfileImage from '../assets/images/profile_pic.png'
 
 function Contact() {
     const data = {
@@ -15,8 +16,14 @@ function Contact() {
     }
 
     return (
-        <div id="contact" className='lg:w-[30%] sm:w-full flex flex-col px-4 lg:items-center pb-4'>
+        <div id="contact" className='lg:w-[20%] sm:w-full flex flex-col px-4 lg:items-center pb-4'>
             <div className='flex flex-col gap-y-1'>
+                <div className="flex flex-row justify-center">
+                    <img
+                        src={ProfileImage}
+                        className="w-64 rounded-2xl"
+                    />
+                </div>
                 <PageTitle title={data.name} />
                 <p className='text-l text-gray-300'>🖥️ <span className='underline'>{data.title}</span></p>
                 <p className='text-l text-gray-300'>📍 {data.location}</p>
