@@ -1,6 +1,8 @@
 import React from 'react'
-import WorkItem from '../../components/WorkItem'
-import PageTitle from '../../components/PageTitle'
+import WorkItem from '../components/WorkItem'
+import PageTitle from '../components/PageTitle'
+import { generateKey } from '../utils/generate_key'
+import { v4 as uuidv4 } from "uuid";
 
 function Work() {
     const experience = [
@@ -103,6 +105,8 @@ function Work() {
                     {
                         experience.map((item) => {
                             return <WorkItem
+                                key={uuidv4()}
+
                                 title={item.title}
                                 company={item.company}
                                 date_start={item.date_start}

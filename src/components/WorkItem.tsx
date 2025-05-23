@@ -1,4 +1,4 @@
-import React from 'react'
+import { v4 as uuidv4 } from "uuid";
 
 
 interface WorkItemInterface{
@@ -24,7 +24,7 @@ function WorkItem(props: WorkItemInterface) {
                 <ul className='p-2'>
                     {
                         props.achievements.map((item) => {
-                            return <li className='my-1 pl-2'>{item}</li>
+                            return <li key={uuidv4()} className='my-1 pl-2'>{item}</li>
                         })
                     }
                 </ul>
@@ -33,7 +33,7 @@ function WorkItem(props: WorkItemInterface) {
                     {
                         props.tech_stack.map((item) => {
                             return (
-                                <div className='px-2 bg-blue-500 rounded-2xl'>{item}</div>
+                                <div key={uuidv4()} className='px-2 bg-blue-500 rounded-2xl'>{item}</div>
                             )
                         })
                     }

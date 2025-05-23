@@ -1,7 +1,6 @@
 import React from 'react'
 
 interface ProjectItemInterface {
-    key: number;
     title: string;
     description: string;
     url: string;

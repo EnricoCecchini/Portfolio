@@ -1,4 +1,5 @@
-import React from 'react'
+import { v4 as uuidv4 } from "uuid";
+
 
 function Navbar() {
     const sections = [
@@ -17,13 +18,13 @@ function Navbar() {
                     {
                         sections.map((item) => {
                             return (
-                                <>
-                                    <div
-                                        className='text-xl hover:underline hover:text-gray-200 hover:animate-bounce'
-                                    >
-                                        <a href={`${item.link}`}>{item.name}</a>
-                                    </div>
-                                </>
+                                <a
+                                    key={uuidv4()}
+                                    className='text-xl hover:underline hover:text-gray-200 hover:animate-bounce'
+                                    href={`${item.link}`}
+                                >
+                                    {item.name}
+                                </a>
                             )
                         })
                     }

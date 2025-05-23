@@ -1,6 +1,6 @@
-import React from 'react'
-import ProjectItem from '../../components/ProjectItem'
-import PageTitle from '../../components/PageTitle'
+import { v4 as uuidv4 } from "uuid";
+import PageTitle from '../components/PageTitle';
+import ProjectItem from '../components/ProjectItem';
 
 function Projects() {
     const projects = [
@@ -49,9 +49,9 @@ function Projects() {
                     <PageTitle title='Projects' />
 
                     <div className='grid lg:grid-cols-5 md:grid-cols-2 gap-4'>
-                        {projects.map((item, index) => {
+                        {projects.map((item) => {
                             return <ProjectItem
-                                key={index}
+                                key={uuidv4()}
                                 title={item.title}
                                 description={item.description}
                                 url={item.url}

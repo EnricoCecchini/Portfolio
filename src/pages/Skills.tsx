@@ -1,18 +1,18 @@
 import React from 'react'
 
-import PythonIcon from '../../assets/icons/python.png';
-import FastAPIIcon from '../../assets/icons/fastapi.png';
-import FlaskIcon from '../../assets/icons/flask.png';
-import JavaScriptIcon from '../../assets/icons/javascript.png';
-import TypeScriptIcon from '../../assets/icons/typescript.png';
-import ReactIcon from '../../assets/icons/react.png';
-import MySQLIcon from '../../assets/icons/mysql.png';
-import GitIcon from '../../assets/icons/git.png';
-import DockerIcon from '../../assets/icons/docker.png';
-import VSCodeIcon from '../../assets/icons/vscode.png';
-import SkillItem from '../../components/SkillItem';
-import PageTitle from '../../components/PageTitle';
-
+import PythonIcon from '../assets/icons/python.png';
+import FastAPIIcon from '../assets/icons/fastapi.png';
+import FlaskIcon from '../assets/icons/flask.png';
+import JavaScriptIcon from '../assets/icons/javascript.png';
+import TypeScriptIcon from '../assets/icons/typescript.png';
+import ReactIcon from '../assets/icons/react.png';
+import MySQLIcon from '../assets/icons/mysql.png';
+import GitIcon from '../assets/icons/git.png';
+import DockerIcon from '../assets/icons/docker.png';
+import VSCodeIcon from '../assets/icons/vscode.png';
+import SkillItem from '../components/SkillItem';
+import PageTitle from '../components/PageTitle';
+import { v4 as uuidv4 } from "uuid";
 
 function Skills() {
     const skill_list = [
@@ -35,9 +35,9 @@ function Skills() {
                 <div className='flex flex-col gap-y-4'>
                     <PageTitle title='Skills' />
                     <div className="grid md:grid-cols-5 grid-cols-2 gap-x-4 gap-y-4 grid-flow-row">
-                        {skill_list.map((item, index) => {
+                        {skill_list.map((item) => {
                             console.log(item)
-                            return <SkillItem index={index} icon={item.icon} name={item.name}/>
+                            return <SkillItem key={uuidv4()} icon={item.icon} name={item.name}/>
                         })}
                     </div>
                 </div>
