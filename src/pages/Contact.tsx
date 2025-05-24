@@ -8,7 +8,7 @@ function Contact() {
         name: "Enrico Cecchini Rivera",
         title: "Software Engineer",
         location: "Monterrey, Nuevo León, México",
-        tagline: "Building fun stuff.",
+        tagline: "Building fun stuff since 2023.",
         socials: [
             {name: "Github", icon: Logos.GITHUB, url: "https://github.com/EnricoCecchini"},
             {name: "Linkedin", icon: Logos.LINKEDIN, url: "https://www.linkedin.com/in/enricocr/"},

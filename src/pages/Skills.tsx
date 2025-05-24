@@ -34,7 +34,7 @@ function Skills() {
             <div id="skills" className='flex flex-col justify-center'>
                 <div className='flex flex-col gap-y-4'>
                     <PageTitle title='Skills' />
-                    <div className="grid md:grid-cols-5 grid-cols-2 gap-x-4 gap-y-4 grid-flow-row">
+                    <div className="grid lg:grid-cols-5 grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4 grid-flow-row">
                         {skill_list.map((item) => {
                             console.log(item)
                             return <SkillItem key={uuidv4()} icon={item.icon} name={item.name}/>

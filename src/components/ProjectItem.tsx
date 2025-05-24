@@ -15,7 +15,7 @@ function ProjectItem(props: ProjectItemInterface) {
                 {
                     props.cover_image
                     ? <img
-                        className="max-w-[45rem] rounded-4xl"
+                        className="lg:max-w-[45rem] rounded-4xl"
                         src={props.cover_image}
                     />
                     : <></>
