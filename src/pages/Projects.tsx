@@ -5,50 +5,41 @@ import ProjectItem from '../components/ProjectItem';
 function Projects() {
     const projects = [
         {
-            title: "Project 1",
-            description: "Project 1 Desc",
+            title: "Local Fiction Reader",
+            description: "Locally hosted fanfiction reading and writing webapp, allowing users to write and store their work in a locally hosted database.",
             url: "https://www.url.com",
-            cover_image: "abc.png"
+            cover_image: "https://m.media-amazon.com/images/I/51fUBB7AOEL.jpg",
+            tech_stack: [
+                "Python", "MySQL", "FastAPI", "React", "Typescript", "TailwindCSS"
+            ]
         },
         {
-            title: "Project 2",
-            description: "Project 1 Desc",
+            title: "Narrator AI",
+            description: "Locally hosted webapp to facilitate AI-narration of text using XTTS and RVC.",
             url: "https://www.url.com",
-            cover_image: "abc.png"
+            cover_image: null,
+            tech_stack: [
+                "Python", "MySQL", "Flask", "Svelte", "JavaScript", "CSS", 'HTML'
+            ]
         },
         {
-            title: "Project 3",
-            description: "Project 1 Desc",
+            title: "Keycard",
+            description: "Terminal based local password manager.",
             url: "https://www.url.com",
-            cover_image: "abc.png"
-        },
-        {
-            title: "Project 4",
-            description: "Project 1 Desc",
-            url: "https://www.url.com",
-            cover_image: "abc.png"
-        },
-        {
-            title: "Project 5",
-            description: "Project 1 Desc",
-            url: "https://www.url.com",
-            cover_image: "abc.png"
-        },
-        {
-            title: "Project 6",
-            description: "Project 1 Desc",
-            url: "https://www.url.com",
-            cover_image: "abc.png"
+            cover_image: null,
+            tech_stack: [
+                "Python", "JSON"
+            ]
         },
     ]
 
     return (
         <>
             <div id="projects"  className="w-full">
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-y-4'>
                     <PageTitle title='Projects' />
 
-                    <div className='grid lg:grid-cols-5 md:grid-cols-2 gap-4'>
+                    <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-4'>
                         {projects.map((item) => {
                             return <ProjectItem
                                 key={uuidv4()}
@@ -56,6 +47,7 @@ function Projects() {
                                 description={item.description}
                                 url={item.url}
                                 cover_image={item.cover_image}
+                                tech_stack={item.tech_stack}
                             />
                         })}
                     </div>

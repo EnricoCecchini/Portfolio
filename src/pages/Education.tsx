@@ -13,27 +13,24 @@ function Education() {
             date_start: "2019-01",
             date_end: "2023-05",
             logo: Logos.UDEM
-        }
+        },
     ]
 
     return (
         <div id="education" className='w-full flex flex-col'>
             <div className='flex flex-col gap-y-4'>
                 <PageTitle title='Education' />
-                <div className="grid md:grid-cols-5 grid-cols-2 gap-x-4 gap-y-4 grid-flow-row">
-                    {educations.map((item) => {
-                        console.log(item)
-                        return <EducationItem
-                            key={uuidv4()}
+                {educations.map((item) => {
+                    return <EducationItem
+                        key={uuidv4()}
 
-                            title={item.title}
-                            school={item.school}
-                            date_start={item.date_start}
-                            date_end={item.date_end}
-                            logo={item.logo}
-                        />
-                    })}
-                </div>
+                        title={item.title}
+                        school={item.school}
+                        date_start={item.date_start}
+                        date_end={item.date_end}
+                        logo={item.logo}
+                    />
+                })}
             </div>
         </div>
     )

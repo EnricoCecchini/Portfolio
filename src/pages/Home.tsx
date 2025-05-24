@@ -10,7 +10,7 @@ import Contact from './Contact'
 function Home() {
   return (
     <>
-        <div className='flex flex-col gap-y-2 w-full items-center bg-stone-900 text-white'>
+        <div className='flex flex-col gap-y-2 w-full items-center bg-neutral-900 text-white text-xl'>
             <Navbar />
 
             <div className='w-full flex lg:flex-row align-top flex-wrap'>

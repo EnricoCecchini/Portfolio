@@ -23,7 +23,7 @@ function Work() {
                 "Developed and maintained internal tools, such as our Log Server."
             ],
             tech_stack: [
-                "Python", "MySQL", "FastAPI", "Quasar", "Nicegui", "Relational Database", "Database Design", "UI Design"
+                "Python", "MySQL", "FastAPI", "Quasar", "NiceGUI", "Relational Database", "Database Design", "UI Design"
             ]
         },
         {

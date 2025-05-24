@@ -2,13 +2,13 @@ import React from 'react'
 
 import PythonIcon from '../assets/icons/python.png';
 import FastAPIIcon from '../assets/icons/fastapi.png';
-import FlaskIcon from '../assets/icons/flask.png';
+import FlaskIcon from '../assets/icons/flask.svg';
 import JavaScriptIcon from '../assets/icons/javascript.png';
 import TypeScriptIcon from '../assets/icons/typescript.png';
 import ReactIcon from '../assets/icons/react.png';
 import MySQLIcon from '../assets/icons/mysql.png';
 import GitIcon from '../assets/icons/git.png';
-import DockerIcon from '../assets/icons/docker.png';
+import DockerIcon from '../assets/icons/docker.svg';
 import VSCodeIcon from '../assets/icons/vscode.png';
 import SkillItem from '../components/SkillItem';
 import PageTitle from '../components/PageTitle';

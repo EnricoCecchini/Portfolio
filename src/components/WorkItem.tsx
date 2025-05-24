@@ -24,7 +24,7 @@ function WorkItem(props: WorkItemInterface) {
                 <ul className='p-2'>
                     {
                         props.achievements.map((item) => {
-                            return <li key={uuidv4()} className='my-1 pl-2'>{item}</li>
+                            return <li key={uuidv4()} className='my-1 pl-2'>· {item}</li>
                         })
                     }
                 </ul>

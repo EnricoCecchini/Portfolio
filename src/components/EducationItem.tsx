@@ -10,14 +10,12 @@ interface EducationItemInterface{
 function EducationItem(props: EducationItemInterface) {
   return (
     <div>
-        <div className="flex flex-row gap-x-2">
-            <div className="">
-                <img
-                    className=""
-                    src={props.logo}
-                />
-            </div>
-            <div className="">
+        <div className="flex flex-row gap-x-4 w-full h-full">
+            <img
+                className="w-[10rem] h-full"
+                src={props.logo}
+            />
+            <div className="w-full">
                 <h2>{props.title}</h2>
                 <p className="italic">{props.school}</p>
                 <p className="">{props.date_start} - {props.date_end}</p>
