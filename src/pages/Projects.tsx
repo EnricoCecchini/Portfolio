@@ -7,10 +7,10 @@ function Projects() {
         {
             title: "Local Fiction Reader",
             description: "Locally hosted fanfiction reading and writing webapp, allowing users to write and store their work in a locally hosted database.",
-            url: "https://www.url.com",
-            cover_image: "https://m.media-amazon.com/images/I/51fUBB7AOEL.jpg",
+            url: "https://github.com/EnricoCecchini/local_fiction_reader_dockerized",
+            cover_image: null,
             tech_stack: [
-                "Python", "MySQL", "FastAPI", "React", "Typescript", "TailwindCSS"
+                "Python", "MySQL", "FastAPI", "React", "Typescript", "TailwindCSS", "Docker"
             ]
         },
         {

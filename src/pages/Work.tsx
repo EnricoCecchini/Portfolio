@@ -1,7 +1,5 @@
-import React from 'react'
 import WorkItem from '../components/WorkItem'
 import PageTitle from '../components/PageTitle'
-import { generateKey } from '../utils/generate_key'
 import { v4 as uuidv4 } from "uuid";
 
 function Work() {
@@ -14,12 +12,10 @@ function Work() {
             description: "I worked as a Software Engineer, mainly in Full-Stack development, designing and building custom ERP software solutions for clients from scratch.",
             achievements: [
                 "Designed and developed multiple ERP solutions to optimize business operations.",
-                "Conducted requirement analysis to ensure the project proposals meet client's needs.",
-                "Designed wireframes for stakeholder review and approval.",
-                "Delivered monthly progress reports for clients.",
-                "Collaborated with cross-functional teams to align business objectivess and improve operational efficiency.",
+                "Conducted requirement analysis to ensure the project proposals meet client's needs and designed wireframes for stakeholder review and approval.",
+                "Collaborated with cross-functional teams to align business objectives and improve operational efficiency.",
                 "Created personalized landing pages to increase client exposure.",
-                "Implemented new features and mantainance for our proprietary framework.",
+                "Implemented new features and maintenance for our proprietary framework.",
                 "Developed and maintained internal tools, such as our Log Server."
             ],
             tech_stack: [
@@ -31,7 +27,7 @@ function Work() {
             company: "Crystal Systems",
             date_start: "2022-07",
             date_end: "2023-10",
-            description: "I worked as a Data Engineer and Full-Stack Developer, and recieved training in multiple technologies.",
+            description: "I worked as a Data Engineer and Full-Stack Developer, and received training in multiple technologies.",
             achievements: [
                 "Worked as a Front-End developer to implement new features in a client's Angular based web app.",
                 "Collaborated with others to create a friendly/positive work environment.",
@@ -46,19 +42,13 @@ function Work() {
             company: "Arca Continental",
             date_start: "2022-12",
             date_end: "2023-05",
-            description: "I created my college thesis in collaboration with Arca Continental, succesfully designing and building a 3D warehouse visualization system to reduce inventory loading times.",
+            description: "I created my college thesis in collaboration with Arca Continental, successfully designing and building a 3D warehouse visualization system to reduce inventory loading times.",
             achievements: [
-                "Designed, implemented and managed the MySQL database.",
-                "Designed wireframes for the application and implemented them using Svelte.",
-                "Built a custom REST API using Flask.",
-                "Designed and implemented a 3D visualization system for warehouse inventory using Svelte and ThreeJS.",
-                "Implemented features to allow users to design and use their own custom warehouse layouts through a layout editor.",
-                "Implemented filters and search functionality to allow users to easily identify a desired product/category.",
-                "Implemented a delivery assignment system to automatically assign warehouse workers the most optimal inventory for a delivery.",
-                "Implemented a KPI dashboard to show relevant inventory data.",
-                "Implemented a multi-user access system to handle user privileges.",
-                "Implemented a modified sorting algorithm to generate inventory sorting proposals based on specified parameters, such as product movement, expiration date, etc.",
-                "Mounted the project in Google Cloud Platform."
+                "Designed, implemented and managed the MySQL database and a custom REST API with Flask.",
+                "Designed and implemented a 3D visualization system for warehouse inventory using Svelte and ThreeJS, with a custom layout editor, search/filtering and an auto-assignment system.",
+                "Developed a KPI dashboard to visualize warehouse performance metrics.",
+                "Implemented a 3-level user access privilege system.",
+                "Implemented a modified sorting algorithm to generate inventory sorting proposals based on user-selected parameters.",
             ],
             tech_stack: [
                 "Python", "Flask", "MySQL", "Svelte", "ThreeJS", "Google Cloud Platform", "UI Design"
@@ -71,7 +61,7 @@ function Work() {
             date_end: "2025-05",
             description: "I worked as a Software Engineer to develop an internal tool to calculate safety stock and reorder point based on historical inventory data.",
             achievements: [
-                "Feasablity analysis to determine if Machine Learning could be applied to the project.",
+                "Feasiblity analysis to determine if Machine Learning could be applied to the project.",
                 "Designed and implemented an internal tool to calculate safety stock and reorder point for warehouse inventory.",
                 "Created a simple web-based GUI for ease of use."
             ],
